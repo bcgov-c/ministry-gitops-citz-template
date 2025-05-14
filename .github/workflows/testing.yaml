@@ -6,6 +6,4 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - env:
-          MESSAGE: ${{ github.event.client_payload.message }}
-        run: echo $MESSAGE
+      - run: echo "This is a test"
